@@ -1,28 +1,40 @@
-# Min-Max Workout Tracker
+# Min-Max Tracker — v2
 
-Free iPhone + desktop PWA for the 12-week Min-Max program.
+A free, installable Progressive Web App (PWA) for the 12-week Min-Max program.
 
-## Features
-- 12-week / 2-block program
-- 5 training days per week
-- Weight, reps and RIR logging for every working set
-- Previous-workout load shown as a placeholder
-- Rest timer with program-based rest defaults and quick 1:00 / 1:30 / 2:30 buttons
-- Workout elapsed-time timer
-- Completed-workout history
-- Exercise history and simple strength chart
-- Local/offline storage
-- JSON backup and restore
+## v2 additions
+- Pause / Resume workout
+- Reset unfinished workout without saving it
+- Workout timer freezes while paused
+- Rest timer presets: 1, 2, 3, 4, and 5 minutes
+- +30 seconds button to extend an active rest timer
+- Program Guide / Info page
+- RIR definitions
+- Intensity-technique definitions
+- Program abbreviations
+- Progression and rest guidance
+
+## Files
+- `index.html` — app entry point
+- `style.css` — responsive iPhone/desktop styling
+- `app.js` — program data and app logic
+- `manifest.webmanifest` — installable-app metadata
+- `sw.js` — offline caching
+- `icon-*.png` — app icons
 
 ## GitHub Pages
-1. Create a public GitHub repository (GitHub Free supports Pages for public repositories).
+1. Create a public GitHub repository, e.g. `min-max-tracker`.
 2. Upload every file in this folder to the repository root.
-3. Settings → Pages → Build and deployment → Source: Deploy from a branch.
-4. Branch: `main`; folder: `/ (root)`; Save.
-5. Wait for GitHub Pages to publish the site.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select branch `main` and folder `/ (root)`.
+6. Save and wait for GitHub Pages to publish.
 
 ## iPhone
-Open the published URL in Safari → Share → Add to Home Screen → turn on Open as Web App → Add.
+Open the GitHub Pages URL in Safari → Share → Add to Home Screen → enable Open as Web App → Add.
 
-## Important
-Workout history is stored locally in the browser/device. Use Backup Data regularly. GitHub Pages sites are publicly accessible, so do not put private personal information or workout history files in the repository.
+## Desktop
+Open the same URL in Edge or Chrome and use the browser's **Install this site as an app** option.
+
+## Data
+Workout history is stored locally in the browser/device. Use **Backup Data** periodically. Use **Restore Data** to recover a backup JSON file.
